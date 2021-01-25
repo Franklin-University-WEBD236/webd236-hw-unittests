@@ -17,9 +17,9 @@ final class letterTest extends TestCase {
     $result = removeDuplicates($arr);
     assertEquals(3, count($result));
     foreach($result as $key => $value) {
-      assertTrue($value != "two", "two should not be in the values");
-      assertTrue($value != "three", "three should not be in the values");
-      assertEquals($arr[$key], $result[$key], "Looks like a key mismatch");
+      $this->assertTrue($value != "two", "two should not be in the values");
+      $this->assertTrue($value != "three", "three should not be in the values");
+      $this->assertEquals($arr[$key], $result[$key], "Looks like a key mismatch");
     }
   }
 
@@ -33,7 +33,7 @@ final class letterTest extends TestCase {
     $result = removeDuplicates($arr);
     assertEquals(8, count($result), "none should have been removed");
     foreach($result as $key => $value) {
-      assertEquals($arr[$key], $result[$key], "Looks like a key mismatch");
+      $this->assertEquals($arr[$key], $result[$key], "Looks like a key mismatch");
     }
   }
 }
