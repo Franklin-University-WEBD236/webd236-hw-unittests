@@ -31,7 +31,7 @@ final class letterTest extends TestCase {
      'g' => "seven", 'h' => "eight",
     );
     $result = removeDuplicates($arr);
-    assertEquals(8, count($result), "none should have been removed");
+    $this->assertEquals(8, count($result), "none should have been removed");
     foreach($result as $key => $value) {
       $this->assertEquals($arr[$key], $result[$key], "Looks like a key mismatch");
     }
