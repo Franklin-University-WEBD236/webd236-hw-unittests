@@ -15,7 +15,7 @@ final class letterTest extends TestCase {
      'g' => "three", 'h' => "two",
     );
     $result = removeDuplicates($arr);
-    assertEquals(3, count($result));
+    $this->assertEquals(3, count($result));
     foreach($result as $key => $value) {
       $this->assertTrue($value != "two", "two should not be in the values");
       $this->assertTrue($value != "three", "three should not be in the values");
