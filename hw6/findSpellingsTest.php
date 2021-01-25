@@ -5,9 +5,9 @@ include "code.php";
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Assert;
 
-final class letterTest extends TestCase {
+$words = preg_split("/[ \t\n\r]/", file_get_contents("words.txt"));
 
-  $words = preg_split("/[ \t\n\r]/", file_get_contents("words.txt"));
+final class letterTest extends TestCase {
   
   function test_findSpellings1() {
     global $words;
