@@ -19,5 +19,7 @@ final class CodeTest extends TestCase {
   public function testIsLetterTest() {
     $this->assertTrue(isLetter("g"), "isLetter('g') should be true");
   }
+  
+}
 
 ?>
