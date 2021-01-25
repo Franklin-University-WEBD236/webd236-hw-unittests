@@ -5,7 +5,7 @@ include "code.php";
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Assert;
 
-final class CodeTest extends TestCase {
+final class letterTest extends TestCase {
 
   public function testIsLetterWithNumber() {
     $this->assertFalse(isLetter("1"), "isLetter('1') should be false");
