@@ -22,7 +22,7 @@ final class filterWordTest extends TestCase {
   function test_wordFilter5() {
     $this->assertEquals("Darnel, you keep overshooting your target.", wordFilter("Darnel, you keep overshooting your target."));
   }
-  function test_wordFilter(6) {
+  function test_wordFilter6() {
     $this->assertEquals("", wordFilter(""));
   }
   
