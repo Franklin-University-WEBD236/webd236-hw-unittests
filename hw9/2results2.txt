@@ -19,10 +19,10 @@
 <li>Fizz</li>
 <li>19</li>
 <li>Buzz</li>
-<li>21</li>
+<li>Fizz</li>
 <li>22</li>
 <li>23</li>
-<li>24</li>
+<li>Fizz</li>
 <li>Buzz</li>
 <li>26</li>
 <li>Fizz</li>
