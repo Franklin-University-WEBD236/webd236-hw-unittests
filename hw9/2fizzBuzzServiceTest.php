@@ -11,7 +11,7 @@ final class fizzBuzzServiceTest extends TestCase {
     $c = 1;
     $results = [];
     while($c < 6){
-     $results[$c] = file_get_contents($base . "results" . $c . ".txt";
+     $results[$c] = file_get_contents($base . "results" . $c . ".txt");
      $c++; 
     }
     $this->assertEquals($results[1], getFizzBuzz(1,15), "The HTML output is not correct, expeccted: " . $results[1]);
