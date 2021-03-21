@@ -7,11 +7,10 @@ use PHPUnit\Framework\Assert;
 
 final class fizzBuzzServiceTest extends TestCase {
   function test_getFizzBuzz() {
-    $base = "https://raw.githubusercontent.com/twhitney11/webd236-hw-unittests/main/hw9/";
     $c = 1;
     $results = [];
     while($c < 6){
-     $results[$c] = file_get_contents($base . "results" . $c . ".txt");
+     $results[$c] = file_get_contents("results" . $c . ".txt");
      $c++; 
     }
     $this->assertEquals($results[1], getFizzBuzz(1,15), "The HTML output is not correct, expeccted: " . $results[1]);
